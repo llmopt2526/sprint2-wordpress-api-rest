@@ -105,7 +105,7 @@ Creat durant la instal·lació.
 
 Instal·la el plugin:
 
-**JWT Authentication for WP REST API** ![(tmeister)](https://es.wordpress.org/plugins/jwt-authentication-for-wp-rest-api/?utm_source=chatgpt.com)
+**JWT Authentication for WP REST API** [(tmeister)](https://es.wordpress.org/plugins/jwt-authentication-for-wp-rest-api/?utm_source=chatgpt.com)
 
 
 Plugins → Add New → cerca `jwt-authentication-for-wp-rest-api` → Install → Activate
@@ -149,7 +149,7 @@ define('JWT_AUTH_CORS_ENABLE', true);
 En realitat és abans que : que carregui `wp-settings.php`, ja que a partir d’ahi: WordPress s’inicialitza, carrega plugins, llegeix configuració i
 arrenca la REST API
 
-![wp-config.php](03_wp-config.png)
+![wp-config.php](img/03_wp-config.png)
 
 ---
 
@@ -177,7 +177,7 @@ POST /wp-json/jwt-auth/v1/token/validate
 curl -X POST "https://IP_del_WP/wp-json/jwt-auth/v1/token" \
 -H "Content-Type: application/json" \
 -d '{"username":"usuari_editor","password":"pass_user_editor"}'
-``
+```
 
 ---
 
