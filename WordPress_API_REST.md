@@ -173,6 +173,12 @@ POST /wp-json/jwt-auth/v1/token
 POST /wp-json/jwt-auth/v1/token/validate
 ```
 
+```
+curl -X POST "https://IP_del_WP/wp-json/jwt-auth/v1/token" \
+-H "Content-Type: application/json" \
+-d '{"username":"usuari_editor","password":"pass_user_editor"}'
+``
+
 ---
 
 ## 9. Exemple GET amb HTML + JavaScript
